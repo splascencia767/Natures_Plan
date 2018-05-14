@@ -1,24 +1,15 @@
-//Jquery
-$document.ready(function(){
-    if(screen.width < 992){
-      $("img:odd").detach().
-     }
-  });
-//Poppers
-function assignPopper(){
-  var 
-}  
 
 //Carousel Crop
 function cropImage(){
+  
   var imgs = document.getElementsByClassName("imgCrop");
   for(var i = 0 ; i < imgs.length ; i++ ){
-   var l = img[i].height
-   var w = img[i].widht
-   cX1 = 0;
-   cX2 = w;
-   cY1 = 0;
-   cY2 = l;
+   var l = imgs[i].height
+   var w = imgs[i].width
+   var cX1 = 0;
+   var cX2 = w;
+   var cY1 = 0;
+   var cY2 = l;
     if(l > w){
       var xtra = l - w;
       cY1 = (xtra/2);
@@ -29,11 +20,11 @@ function cropImage(){
       cX2 = w - (xtra/2);
     }
 
-    img[i].styles.clip = "rect("+cX1+"px,"+cX2 +"px,"+cY2+"px,"+cY1+"px)"
+    imgs[i].style.clip = "rect("+cX1+"px,"+cX2 +"px,"+cY2+"px,"+cY1+"px)" ;
+    imgs[i].style.position = "absolute";
   };
-
 }
 
 
 //EventListeners
-window.addEventListener("load", cropImage)
+window.addEventListener("load", cropImage())
