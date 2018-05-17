@@ -18,7 +18,8 @@
 
 .brownGradient{
     /* background: linear-gradient(to bottom, #343a40, gray ); */
-    background: linear-gradient(to bottom, burlywood ,wheat )
+    background: linear-gradient(to bottom, burlywood ,wheat );
+    min-height: 100vh;
 }
 
 .inputStyles{
@@ -61,12 +62,54 @@
 }
 .indexP a{
     color: #343a40;
-    font-size: 1em;
+    font-size: 1.01em;
     font-style: italic;
 }
 
 .body{
     padding: 1em;
+}
+
+.heading3{
+    color: #28a745;
+    border: 5px solid #343a40;
+    border-radius: 20px;
+    display: inline-block;
+    padding: .25em .5em .25em .5em;
+    font-size: 3em;
+    margin-top: 10px; 
+    
+}
+
+.productP{
+    color: #343a40;
+    font-size:1.3em;
+    text-indent: 1.5em;
+
+}
+
+label{
+    color: #343a40;
+    font-size:1.3em;
+}
+
+.contactP{
+    font-size: 1.7em;
+    color: #343a40;
+    border-left: 5px solid #28a745;
+    margin-left: 30px;
+    padding-left: 20px;
+    background: linear-gradient(to right, #28a745 10%, transparent 90%); 
+}
+
+.aboutP{
+    color: #343a40 ;
+    font-size: 2em;
+    text-indent: 1.5em;
+}
+
+.aboutUs{
+    margin: 2em 10px;
 }
 /* Laptop and Computer Styles */
 @media screen and (min-width:760px){
