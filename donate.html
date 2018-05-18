@@ -72,42 +72,43 @@
       </nav>
           
     <div id="chkOut"class="container-fluid dark">
-    <h2 class="align-content-center">Donate</h1>
+    <h3 class="heading3">Donate</h3>
     <!-- Form -->
+    <div class="">
     <section id="paySection">
-            <form id="payment" name="payment" method="post" action="co_temp.html">         
+            <form id="payment" name="payment" method="post" action="co_temp.html" class="form-group inputStyles">         
                <fieldset id="creditcard">
-                  <legend>Credit Information</legend>
-      
+                  <h4 class="heading4">Credit Information</h4>
+                <div class="center">
                   <label for="cardName">Name*</label>
-                  <input name="cardName" id="cardName" required type="text" />              
+                  <input class="inputStyles form-control-sm" name="cardName" id="cardName" required type="text" />              
       
                   <fieldset id="cards">
                      <label class="cardLabel">Credit Card*</label>
                      <label class="cardLabel">
-                        <input name="credit" value="amex" type="radio" required />
+                        <input class="inputStyles form-check-inline" name="credit" value="amex" type="radio" required />
                         <img src="co_amex.png" alt="American Express" />
                      </label>
                      <label class="cardLabel">               
-                        <input name="credit" value="discover" type="radio" />
+                        <input class="inputStyles form-check-inline" name="credit" value="discover" type="radio" />
                         <img src="co_discover.png" alt="Discover" />
                      </label>
                      <label class="cardLabel">                  
-                        <input name="credit" value="master" type="radio"  />
+                        <input class="inputStyles form-check-inline" name="credit" value="master" type="radio"  />
                         <img src="co_master.png" alt="MasterCard" />
                      </label>
                      <label class="cardLabel">                  
-                        <input name="credit" value="visa" type="radio"  />
+                        <input class="inputStyles form-check-inline" name="credit" value="visa" type="radio"  />
                         <img src="co_visa.png" alt="Visa" />
                      </label>
                   </fieldset>          
       
                   <label for="cardNumber">Credit Card Number*</label>
-                  <input name="cardNumber" id="cardNumber" required type="text"
+                  <input class="inputStyles form-control-sm" name="cardNumber" id="cardNumber" required type="text"
                          pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/>
       
                   <label for="expMonth">Expiration Date*</label>
-                  <select id="expMonth" name="expMonth">
+                  <select id="expMonth" name="expMonth" class="form-control-sm">
                      <option value="mm">mm</option>
                      <option value="01">01</option>
                      <option value="01">02</option>
@@ -123,7 +124,7 @@
                      <option value="01">12</option>
                   </select>
                   <span> / </span>
-                  <select id="expYear" name="expYear">
+                  <select id="expYear" name="expYear" class="form-control-sm">
                      <option value="yy">yy</option>
                      <option value="2018">2018</option>
                      <option value="2019">2019</option>
@@ -131,17 +132,21 @@
                      <option value="2021">2021</option>
                      <option value="2022">2022</option>
                   </select>            
-      
-                  <label for="cvc">CVC*</label>
-                  <input name="cvc" id="cvc" required pattern="^\d{3,4}$" type="text"/>
+                </br>
+                    <label for="cvc">CVC*</label>
+                    <input class="inputStyles form-control-sm" name="cvc" id="cvc" required pattern="^\d{3,4}$" type="text"/>
                </fieldset>
       
-               <p id="footnote">* - Required Item</p>        
-               <input type="submit" id="subButton" value="Submit Payment" />         
+               
+               <div class="center">
+               <p id="footnote">* - Required Item</p>
+               <input class="inputStyles form-control-sm" type="submit" id="subButton" value="Submit Payment" />
+               </div>
+            </div>         
             </form>
       
          </section>
-
+        </div>
 
     
 
