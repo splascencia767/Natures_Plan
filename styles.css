@@ -116,12 +116,14 @@ label{
     margin: 10px, 10px, 0px, 10px;
     display: block;
     width: 100%;
-    background: #343a40
+    background: #343a40;
+    color: #28a745;
 }
 .foot{
     background: #343a40;
     height: 30px;
 }
+
 /* Laptop and Computer Styles */
 @media screen and (min-width:760px){
 .formStyles{
