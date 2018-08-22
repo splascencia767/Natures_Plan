@@ -74,15 +74,23 @@
     <div id="chkOut"class="container-fluid dark">
     <h3 class="heading3">Check Out</h3>
     <!-- Form -->
-    <div class="">
+    <div class=""></div>
     <section id="paySection">
-            <form id="payment" name="payment" method="post" action="co_temp.html" class="form-group inputStyles">         
-               <fieldset id="creditcard">
+            <form id="payment" name="payment"  class="form-group inputStyles" novalidate>
+                <fieldset id="creditcard">
                   <h4 class="heading4">Credit Information</h4>
+                <div id="errorText" class="center alert-danger my-1 mx-auto "></div>
+                <div id="nameError" class="center alert-danger my-1 w-25"></div>
+                <div id="cardError" class="center alert-danger my-1 w-25"></div>
                 <div class="center">
-                  <label for="cardName">Name*</label>
-                  <input class="inputStyles form-control-sm" name="cardName" id="cardName" required type="text" />              
-      
+                 <fieldset id="clientName">
+                    <label for="cardFirstName">First Name*</label>
+                    <input class="inputStyles form-control-sm" name="cardFirstName" id="cardFirstName" required type="text"/>
+                    <label for="cardMiddleName">Middle Initial*</label>
+                    <input class="inputStyles  form-control-sm" name="cardMiddleName" id="cardMiddleName" required type="text"/>
+                    <label for="cardLastName">Last Name*</label>
+                    <input class="inputStyles form-control-sm" name="cardLastName" id="cardLastName" required type="text"/>                 
+                  </fieldset>
                   <fieldset id="cards">
                      <label class="cardLabel">Credit Card*</label>
                      <label class="cardLabel">
